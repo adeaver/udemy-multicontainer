@@ -16,7 +16,7 @@ after_success:
     # Login to docker cli
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Push images to docker hub
-    - docker push adeaver/udemy-mutli-client
+    - docker push adeaver/udemy-multi-client
     - docker push adeaver/udemy-multi-nginx
     - docker push adeaver/udemy-multi-server
-    - docker push adeaver/udemy-mutli-worker
+    - docker push adeaver/udemy-multi-worker
